@@ -1,12 +1,37 @@
 package main
 
+import (
+	"GoLangCourseExercisesMore/action"
+	"encoding/json"
+	"fmt"
+	"golang.org/x/crypto/bcrypt"
+	"log"
+	"math"
+	"os"
+	"runtime"
+	"sort"
+	"sync"
+	"sync/atomic"
+)
+
 // GO suffers no fools!!!
 
 // crypto bcrypt https://pkg.go.dev/golang.org/x/crypto/bcrypt
 // run the following to install bcrypt:
-// go get golang.org/x/crypto/bcrypt
+// ---> go get golang.org/x/crypto/bcrypt
 // run the following to update bcrypt:
-// go get -u golang.org/x/crypto/bcrypt
+// ---> go get -u golang.org/x/crypto/bcrypt
+
+// Test run command:
+// go test
+
+// Test coverage command:
+// go test -cover
+// go test -coverprofile c.out
+// go tool cover -html=c.out
+
+// Benchmark command (ninja_level_13/01/example_01):
+// go test -bench .
 
 /*
 	Concurrency
@@ -53,21 +78,6 @@ package main
 	in a new goroutine. When the function terminates, its goroutine also terminates. If the function has any return values,
 	they are discarded when the function completes.  <----- !!!!!
 */
-
-import (
-	"GoLangCourseExercisesMore/action"
-	"encoding/json"
-	"fmt"
-	"log"
-	"math"
-	"os"
-	"runtime"
-	"sort"
-	"sync"
-	"sync/atomic"
-
-	"golang.org/x/crypto/bcrypt"
-)
 
 var a int = 8
 
@@ -252,6 +262,22 @@ func main() {
 	// Level11Ex3()
 	// Level11Ex5()
 	// Level11Ex5()
+
+	// ninja_level_13
+	// example_01.MainFunc()
+
+	// ninja_level_13 
+	// example_02:
+	//s := "one two three, four , five one two two two two three"
+	//res := strings.Fields(s)
+	//m := make(map[string]int)
+	//for _, v := range res {
+	//	m[v]++
+	//}
+	//for k, v := range m {
+	//	fmt.Printf("Value %9s found: %2d times\n", k, v)
+	//}
+	//fmt.Println("Finished.")
 
 }
 
