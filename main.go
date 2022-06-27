@@ -266,7 +266,7 @@ func main() {
 	// ninja_level_13
 	// example_01.MainFunc()
 
-	// ninja_level_13 
+	// ninja_level_13
 	// example_02:
 	//s := "one two three, four , five one two two two two three"
 	//res := strings.Fields(s)
@@ -279,6 +279,21 @@ func main() {
 	//}
 	//fmt.Println("Finished.")
 
+	res, _ := test(1, 2, 3, 4)
+	fmt.Println(res)
+}
+
+func test(arg ...interface{}) (int, error) {
+	count := 0
+	for i, v := range arg {
+		fmt.Printf("%d - %d\n", i, v)
+		val, err := v.(int)
+		if !err {
+			return 0, fmt.Errorf("")
+		}
+		count = count + val
+	}
+	return count, nil
 }
 
 func Level11Ex5() int {

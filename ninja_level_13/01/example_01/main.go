@@ -17,5 +17,6 @@ func MainFunc() (canine, int) {
 	}
 	fmt.Println(fido)
 	fmt.Println(dog.YearsTwo(20))
+
 	return fido, dog.YearsTwo(20)
 }
