@@ -279,8 +279,54 @@ func main() {
 	//}
 	//fmt.Println("Finished.")
 
-	res, _ := test(1, 2, 3, 4)
-	fmt.Println(res)
+	//res, _ := test(1, 2, 3, 4)
+	//fmt.Println(res)
+
+	//fmt.Println("Hello, Test")
+	//go func() {
+	//	for i := 0; i < 10; i++ {
+	//		fmt.Println("inside loop")
+	//	}
+	//}
+	//for i := 0; i < 10; i++ {
+	//	fmt.Println("inside loop")
+	//}
+	//time.Sleep(2 * time.Second)
+
+	type User struct {
+		Name        string `json:"full_name"`
+		Age         int    `json:"age,omitempty"`
+		Active      bool   //`json:"-"`
+		LastLoginAt string
+	}
+
+	type Data struct {
+		Id        int    `json:"id"`
+		Title     string `json:"title"`
+		Completed bool   `json:"completed"`
+	}
+
+	type Issue struct {
+		UserId1 Data `json:"userId1"`
+	}
+
+	//type Val struct {
+	//	IssuesData Issue `json:"issuesData"`
+	//}
+
+	type Val struct {
+		IssuesData map[string]Data `json:"issuesData"`
+	}
+
+	//	val := `{
+	//  "issuesData":{
+	//    "userId1": {
+	//      "id": 1,
+	//      "title": "delectus aut autem",
+	//      "completed": false
+	//    }
+	//  }
+	//}`
 }
 
 func test(arg ...interface{}) (int, error) {
