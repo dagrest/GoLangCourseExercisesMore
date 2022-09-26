@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 type Person struct {
 	first string
@@ -45,4 +48,8 @@ func main() {
 	fmt.Println(" ---> Interface func:")
 	isHuman(p1)
 	isHuman(s1)
+
+	//var w io.Writer
+	w := os.Stdout
+	w.Write([]byte("Stdout -> David"))
 }
