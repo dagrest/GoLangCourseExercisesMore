@@ -12,11 +12,11 @@ func main() {
 	fmt.Println("Map Examples")
 
 	p0 := Person{"James", "Bond", 37}
-	p1 := Person{"Monney", "Penny", 25}
+	p1 := Person{"Miss", "Moneypenny", 25}
 
 	fmt.Println(p0, p1)
 
-	m := make(map[string]Person)
+	m := make(map[string]Person, 5)
 
 	m["007"] = p0
 	m["mp"] = p1
