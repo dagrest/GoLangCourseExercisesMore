@@ -31,4 +31,8 @@ func main() {
 
 	value, exists = m["001"]
 	fmt.Println("Value 001: ", value, exists)
+
+	for s, v := range m {
+		fmt.Println("Value: ", s, v)
+	}
 }
