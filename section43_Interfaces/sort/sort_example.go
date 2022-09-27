@@ -1,3 +1,12 @@
+/*
+
+https://pkg.go.dev/sort#Sort
+https://pkg.go.dev/sort/#Interface
+
+https://go.dev/doc/effective_go#printing
+
+*/
+
 package main
 
 import (
