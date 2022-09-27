@@ -33,6 +33,9 @@ import (
 // Benchmark command (ninja_level_13/01/example_01):
 // go test -bench .
 
+// Format command:
+// go fmt ./...
+
 /*
 	Concurrency
 	===========
