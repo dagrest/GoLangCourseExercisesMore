@@ -33,8 +33,13 @@ Map in Go:
 - https://github.com/ardanlabs/gotraining
 - [topics](https://github.com/ardanlabs/gotraining/tree/master/topics/go)
 - [race conditions](https://github.com/ardanlabs/gotraining/blob/master/topics/go/concurrency/data_race/README.md)  
-
+- [Photos fom book](https://photos.google.com/share/AF1QipMTxq4L6HMxzow9bZLa2UU71z5R3AH-45a417xHGEtBCB7UyXZDUX4PL5KGTcheEg?key=Si1oSUJ5VU9BSWVPczdpREd5Z2N0eHBaYTZabnpn)  
 Commands:
 - go run -race main.go  
 vs  
 - go run main.go  
+
+### Channels  
+- [Channel types](https://go.dev/ref/spec#Channel_types)
+
+### [Go Proverbs](https://go-proverbs.github.io/)
