@@ -39,6 +39,10 @@ Commands:
 vs  
 - go run main.go  
 
+#### Concurrency Patterns
+- [Go Blog](https://go.dev/blog/all): Search for concurrency
+- [Pipeline Pattern](https://go.dev/blog/pipelines)
+
 ### Channels  
 - [Channel types](https://go.dev/ref/spec#Channel_types)
 
