@@ -27,3 +27,14 @@
 Map in Go:  
 - [Go maps in action](https://go.dev/blog/maps)  
 - [Macro View of Map Internals In Go](https://www.ardanlabs.com/blog/2013/12/macro-view-of-map-internals-in-go.html)
+
+### Concurrency
+#### ARDANLABS GO TRAINING
+- https://github.com/ardanlabs/gotraining
+- [topics](https://github.com/ardanlabs/gotraining/tree/master/topics/go)
+- [race conditions](https://github.com/ardanlabs/gotraining/blob/master/topics/go/concurrency/data_race/README.md)  
+
+Commands:
+- go run -race main.go  
+vs  
+- go run main.go  
