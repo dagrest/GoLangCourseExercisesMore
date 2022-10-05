@@ -21,11 +21,11 @@ func Test_test(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			got, err := test(tt.args.arg...)
 			if (err != nil) != tt.wantErr {
-				t.Errorf("test() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("channel_try() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
 			if got != tt.want {
-				t.Errorf("test() got = %v, want %v", got, tt.want)
+				t.Errorf("channel_try() got = %v, want %v", got, tt.want)
 			}
 		})
 	}

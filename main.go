@@ -23,15 +23,15 @@ import (
 // ---> go get -u golang.org/x/crypto/bcrypt
 
 // Test run command:
-// go test
+// go channel_try
 
 // Test coverage command:
-// go test -cover
-// go test -coverprofile c.out
+// go channel_try -cover
+// go channel_try -coverprofile c.out
 // go tool cover -html=c.out
 
 // Benchmark command (ninja_level_13/01/example_01):
-// go test -bench .
+// go channel_try -bench .
 
 // Format command:
 // go fmt ./...
@@ -203,7 +203,7 @@ func main() {
 		// =========== Level9Ex3 ==============
 		// Go routines
 		// run as (to see race condition):
-		// 			go run -race test.go
+		// 			go run -race channel_try.go
 		// OUTPUT:
 		// CPUs: 10
 		// Goroutines: 1
@@ -282,7 +282,7 @@ func main() {
 	//}
 	//fmt.Println("Finished.")
 
-	//res, _ := test(1, 2, 3, 4)
+	//res, _ := channel_try(1, 2, 3, 4)
 	//fmt.Println(res)
 
 	//fmt.Println("Hello, Test")
